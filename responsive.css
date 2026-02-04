@@ -1,0 +1,218 @@
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .emergency-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-menu {
+        width: 100%;
+        order: 3;
+        margin-top: 20px;
+        display: none;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--light-gray);
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 15px 0;
+    }
+    
+    .nav-cta {
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+    
+    .hero {
+        padding: 150px 0 80px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .services, .why-us, .about-content, .directors {
+        padding: 60px 0;
+    }
+    
+    .cta, .about-cta {
+        padding: 60px 0;
+    }
+    
+    .cta-content h2, .about-cta h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-buttons, .about-cta .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .page-header {
+        padding: 130px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .contact-cards, .quick-buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-wrapper {
+        padding: 30px;
+    }
+    
+    .footer {
+        padding: 60px 0 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .dev-float {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .dev-float span {
+        display: none;
+    }
+    
+    .dev-float i {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .accreditation-grid, .directors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card, .feature, .accreditation-card, .director-card {
+        padding: 25px 20px;
+    }
+    
+    .form-wrapper {
+        padding: 25px 20px;
+    }
+    
+    .footer-certs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cert-badge {
+        width: 100%;
+        text-align: center;
+    }
+}
