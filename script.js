@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
             this.querySelector('i').classList.toggle('fa-times');
         });
     }
+
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
     
     // Close menu when clicking outside
     document.addEventListener('click', function(event) {
@@ -179,4 +187,5 @@ document.addEventListener('DOMContentLoaded', function() {
         card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         observer.observe(card);
     });
+
 });
