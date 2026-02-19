@@ -4,289 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinaye Electro-Mechanical | Limit Link Services</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            background: #111;
-            color: #fff;
-            padding: 15px 0;
-        }
-
-        .navbar .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .menu-toggle {
-            display: none;
-            font-size: 24px;
-            color: white;
-            cursor: pointer;
-        }
-
-        /* HERO */
-        .hero {
-            padding: 60px 0;
-            background: #f5f5f5;
-        }
-
-        .hero .container {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-        }
-
-        .hero-buttons {
-            margin-top: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-right: 10px;
-            text-decoration: none;
-            color: white;
-            background: #007bff;
-            border-radius: 5px;
-        }
-
-        .btn-secondary {
-            background: #28a745;
-        }
-
-        /* SERVICES */
-        .services {
-            padding: 60px 0;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .service-card {
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background: #fff;
-        }
-
-        /* FEATURES */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        /* FOOTER */
-        .footer {
-            background: #111;
-            color: white;
-            padding: 40px 0;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        /* MOBILE */
-        @media (max-width: 768px) {
-
-            .hero .container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .services-grid,
-            .features-grid,
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: #222;
-                position: absolute;
-                top: 60px;
-                right: 20px;
-                padding: 20px;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: block;
-            }
-        }
-    </style>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-
 <body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container">
-        <h2>Tinaye Electro-Mechanical</h2>
-
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-    <div class="container">
-        <div>
-            <h1>Material Handling Safety Experts</h1>
-            <p>Serving Zimbabwe since 1998</p>
-
-            <div class="hero-buttons">
-                <a href="#" class="btn">Our Services</a>
-                <a href="#" class="btn btn-secondary">Call Now</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <span class="logo-main">Tinaye</span>
+                    <span class="logo-sub">Electro-Mechanical</span>
+                </div>
+                <div class="trading-name">T/A Limit Link Services</div>
+            </div>
+            
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="nav-cta">Get Quote</a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
+    </nav>
 
-        <div>
-            <img src="mt2.jpg" alt="Crane Safety">
-        </div>
-    </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Inspections</h3>
-                <p>Crane, lifting gear & safety checks</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Material Handling Safety & Compliance Experts</h1>
+                <p class="hero-subtitle">Serving Zimbabwe's Industry Since 1998 with OSHA-Compliant Training & Inspections</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Professionals Trained</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Certified Courses</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-hard-hat"></i> Our Services
+                    </a>
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                </div>
             </div>
-
-            <div class="service-card">
-                <h3>Training</h3>
-                <p>Certified safety training programs</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Safety</h3>
-                <p>Risk assessments & compliance</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Equipment</h3>
-                <p>Mechanical & electrical supply</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FEATURES -->
-<section class="services">
-    <div class="container">
-        <h2>Why Choose Us</h2>
-
-        <div class="features-grid">
-            <div class="service-card">Accredited</div>
-            <div class="service-card">Experienced</div>
-            <div class="service-card">Certified</div>
-            <div class="service-card">On-Site Training</div>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div>
-                <h3>Tinaye</h3>
-                <p>Safety & Compliance Experts</p>
-            </div>
-
-            <div>
-                <h3>Links</h3>
-                <p>Home</p>
-                <p>About</p>
-            </div>
-
-            <div>
-                <h3>Contact</h3>
-                <p>Bulawayo, Zimbabwe</p>
-                <p>077 245 5341</p>
-            </div>
-
-            <div>
-                <h3>Hours</h3>
-                <p>Mon - Fri: 8AM - 5PM</p>
+            <div class="hero-image">
+                <img src="mt2.jpg" class="image-placeholder">
+                    <i class="fas fa-crane"></i>
+                    <p>Crane Safety & Inspection</p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<!-- JS -->
-<script>
-    const toggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Core Services</h2>
+                <p>Comprehensive material handling solutions for your business</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Equipment Inspections</h3>
+                    <ul>
+                        <li>Crane Inspection & Certification</li>
+                        <li>Lifting Tackle Inspection</li>
+                        <li>Scaffold Inspection</li>
+                        <li>Forklift Inspection</li>
+                    </ul>
+                    <a href="contact.html" class="service-link">Request Inspection →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Training & Certification</h3>
+                    <ul>
+                        <li>Crane Operator Training</li>
+                        <li>Working at Heights</li>
+                        <li>Rigger Certification</li>
+                        <li>Forklift Operator</li>
+                        <li>Safety Compliance</li>
+                    </ul>
+                    <a href="contact.html" class="service-link">View Courses →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Programs</h3>
+                    <ul>
+                        <li>OSHA Compliance</li>
+                        <li>Risk Assessments</li>
+                        <li>Accident Investigations</li>
+                        <li>Site Safety Surveys</li>
+                    </ul>
+                    <a href="contact.html" class="service-link">Get Assessment →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Equipment Supply</h3>
+                    <ul>
+                        <li>Mechanical Components</li>
+                        <li>Electrical Supplies</li>
+                        <li>Safety Equipment</li>
+                        <li>Lifting Gear</li>
+                    </ul>
+                    <a href="contact.html" class="service-link">Request Quote →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    toggle.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
-</script>
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Limit Link Services?</h2>
+                <p>Your trusted partner for material handling safety</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Government Accredited</h3>
+                    <p>Recognized by Zimbabwe Factories & Works Inspectorate</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>19+ years of practical industry experience</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>OSHA Compliant</h3>
+                    <p>All training meets international safety standards</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>On-Site Training</h3>
+                    <p>Customized programs at your facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Enhance Your Safety Compliance?</h2>
+                <p>Contact us today for a consultation or site safety survey</p>
+                <div class="cta-buttons">
+                    <a href="tel:0772455341" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Call: 078 622 6747
+                    </a>
+                    <a href="mailto:gmunyawiri@gmail.com" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                    <a href="https://wa.me/263772455341" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-main">Tinaye</span>
+                        <span class="logo-sub">Electro-Mechanical</span>
+                    </div>
+                    <p class="trading-name">T/A Limit Link Services</p>
+                    <p class="footer-description">Serving the material handling industry with safety, compliance, and expertise since 1998.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>10 Nicholson Road, Romney Park, Bulawayo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>gmunyawiri@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>077 245 5341</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <ul class="business-hours">
+                        <li><strong>Mon - Fri:</strong> 8:00 AM - 5:00 PM</li>
+                        <li><strong>Saturday:</strong> 9:00 AM - 1:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-certs">
+                    <span class="cert-badge">Zimbabwe Factories & Works Inspectorate</span>
+                    <span class="cert-badge">OSHA Compliance</span>
+                    <span class="cert-badge">ASME Standards</span>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2024 Tinaye Electro-Mechanical (Pvt) Ltd T/A Limit Link Services. All rights reserved.</p>
+                    <p class="dev-credit">
+                        Website developed by 
+                        <a href="mailto:ibbatsonmunyawiri13@gmail.com">Ibbatson Munyawiri</a> • 
+                        <a href="tel:0786226747">078 622 6747</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Developer WhatsApp Float -->
+    <a href="https://wa.me/263786226747?text=Hello%20Ibbatson,%20I%20saw%20your%20work%20on%20the%20Tinaye%20website%20and%20would%20like%20to%20discuss%20a%20website%20project" 
+       class="dev-float" 
+       target="_blank"
+       title="Contact Website Developer">
+        <i class="fab fa-whatsapp"></i>
+        <span>Contact Developer</span>
+    </a>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html>    
